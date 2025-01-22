@@ -1,0 +1,67 @@
+.body{
+    padding: 0;
+    margin: 0;
+
+    overflow-x: hidden;
+
+}
+
+/*тука слагам нав бар стиловете ми*/
+#navbarNav{
+    justify-content: end;    
+}
+/*край на нав стиловете за да не се бъркам*/
+
+/*first section*/
+.section-first{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:2em;
+}
+
+/*malko taftarosani efekti */
+.section-first>.rounded{
+    --s: 500px;   /* the size of the image */
+    --b: 3px;     /* the border thickness old value = 8px*/
+    --g: 10px;    /* the gap  14px;*/
+    --c: black; /* the color old color #4ECDC4*/
+    
+    width: var(--s);
+    aspect-ratio: 1;
+    outline: calc(var(--s)/2) solid rgba(255, 255, 255, 0.3);; /*#0009;*/
+    outline-offset: calc(var(--s)/-2);
+    cursor: pointer;
+    transition: .3s;
+  }
+ .section-first> .rounded:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+  }
+/*krai*/
+
+/*мой си стил за бутоните accept и прочие*/
+#myBtn{
+    background-color: #87ffa1;
+}
+
+/*край на стиловте на мойте бутони*/
+/*първата секция картичката с формата стилов*/
+    #main-card{
+        border: 1px solid black;
+        border-radius: 25px;
+        box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+      
+
+    }    
+
+    #myCard > .myForm > .section-card-btn{
+        border:2px solid black;
+        display: flex;
+        justify-content: center;
+        gap:1em;
+        
+    }
+
+/*край*/
