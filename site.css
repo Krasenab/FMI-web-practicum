@@ -1,17 +1,99 @@
 .body{
     padding: 0;
     margin: 0;
-
     overflow-x: hidden;
-
 }
 
 /*тука слагам нав бар стиловете ми*/
-#navbarNav{
-    justify-content: end;    
-}
-/*край на нав стиловете за да не се бъркам*/
+#navbarNavcolapse{
 
+    justify-content: flex-end;
+    border: 2px yellow solid;
+
+}
+#navbarNav{
+
+    margin-right: 5em;
+}
+.nav-item{
+    display: flex;
+    background: #D9E8FB;
+    border: 2px black solid;
+    margin-right: 1em;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/*край на нав стиловете за да не се бъркам*/
+/*section-third*/
+/*dokato go naglasq :@*/
+.section-third{
+
+    display: flex;    
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 6em;
+    width: 75%;
+    align-self: center;
+}
+.section-third > .row{
+
+
+    width: 49%;
+    overflow: hidden;
+    background: #D9E8FB;
+    border-radius: 15px;
+}
+
+
+
+/*krai*/
+/*second section*/
+.section-second{
+    
+    display: flex;
+    justify-content: center;
+}
+.card-container {
+    display: flex;
+    gap: 30px;
+}
+
+.cards {
+    background-color: #e8d9f1;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cards h3 {
+    margin: 10px 0 5px;
+    font-size: 16px;
+    color: #4c4c4c;
+}
+
+.cards p {
+    margin: 0;
+    font-size: 14px;
+    color: #6c6c6c;
+}
+
+/*krai*/
 /*first section*/
 .section-first{
 
@@ -39,7 +121,27 @@
     outline: var(--b) solid var(--c);
     outline-offset: var(--g);
   }
-/*krai*/
+
+
+  /*първата секция картичката с формата стилов*/
+  #main-card{
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+  
+
+}    
+
+#myCard > .myForm > .section-card-btn{
+    border:2px solid black;
+    display: flex;
+    justify-content: center;
+    gap:1em;
+    
+}
+
+/*край*/
+
 
 /*мой си стил за бутоните accept и прочие*/
 #myBtn{
@@ -47,21 +149,4 @@
 }
 
 /*край на стиловте на мойте бутони*/
-/*първата секция картичката с формата стилов*/
-    #main-card{
-        border: 1px solid black;
-        border-radius: 25px;
-        box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
-      
 
-    }    
-
-    #myCard > .myForm > .section-card-btn{
-        border:2px solid black;
-        display: flex;
-        justify-content: center;
-        gap:1em;
-        
-    }
-
-/*край*/
