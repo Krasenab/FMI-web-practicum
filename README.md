@@ -1,2 +1,2 @@
-# PU-FMI-web-practicum
+# FMI-web-practicum
 first semester university coursework web practicum
