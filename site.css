@@ -4,58 +4,131 @@
     overflow-x: hidden;
 }
 
+
 /*тука слагам нав бар стиловете ми*/
 #navbarNavcolapse{
-
     justify-content: flex-end;
-    border: 2px yellow solid;
-
+    width: 100%;
+    max-width: 1400px;
 }
 #navbarNav{
-
     margin-right: 5em;
 }
 .nav-item{
     display: flex;
-    background: #D9E8FB;
-    border: 2px black solid;
+    background: #e5eef9;
     margin-right: 1em;
     padding-right: 15px;
     padding-left: 15px;
+    
+}
+.nav-item:hover{    
+    background: #D9E8FB;
+}
+#navbarLogoBtn{
+
+    padding-left: 20px;
+    padding-right:20px;
+    margin-left: 5em;
+    background-color: #effdee;
+    border-radius: 4px;
+}
+#navbarLogoBtn:hover{
+    background-color: #c0f4bd;
+}
+/*край на нав стиловете за да не се бъркам*/
+/*фуутър стиловете*/
+footer {
+    background-color: white;
+    color: black; 
+    padding: 20px 0; 
+    text-align: center;
+    position: relative; 
+    width: 100%;
 }
 
-/*край на нав стиловете за да не се бъркам*/
-/*section-third*/
-/*dokato go naglasq :@*/
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left p {
+    margin: 0;
+}
+
+.footer-right a {
+    color: black;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-right a:hover {
+    color: #4ECDC4; /* Промяна на цвета при ховър */
+}
+
+
+
+/*карй на футъра*/
+/*четвъртата секция */
+   .section-fourth{
+        background: #cfedd8; ;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        max-width: 1300px;
+        width: 75% ;
+        margin-top: 3em; 
+        padding-top:1rem;    
+        padding-bottom: 1rem;
+              
+    }
+ 
+   
+    
+/*Край*/
+
+/*section-third а.к.а третата секция*/
+
 .section-third{
 
     display: flex;    
     justify-content: space-around;
-    gap: 20px;
+    gap: 10px;
     margin-top: 6em;
-    width: 75%;
+    width: 100%;
+    max-width: 1300px;
     align-self: center;
+    padding-right: 8em;
+    padding-left: 8em;
+    min-width: 400px;
+    
 }
 .section-third > .row{
-
-
-    width: 49%;
-    overflow: hidden;
+    width: 45%;  
+    overflow: visible;
     background: #D9E8FB;
     border-radius: 15px;
+
 }
 
 
+/*край*/
 
-/*krai*/
-/*second section*/
+/*втората секция*/
 .section-second{
-    
     display: flex;
     justify-content: center;
+   
 }
 .card-container {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
@@ -94,16 +167,15 @@
 }
 
 /*krai*/
-/*first section*/
+/*първата секция*/
 .section-first{
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap:2em;
 }
 
-/*malko taftarosani efekti */
+/*диво ефектче взето от сайта */
 .section-first>.rounded{
     --s: 500px;   /* the size of the image */
     --b: 3px;     /* the border thickness old value = 8px*/
@@ -116,37 +188,155 @@
     outline-offset: calc(var(--s)/-2);
     cursor: pointer;
     transition: .3s;
-  }
- .section-first> .rounded:hover {
+}
+
+.section-first> .rounded:hover {
     outline: var(--b) solid var(--c);
     outline-offset: var(--g);
-  }
+}
 
 
-  /*първата секция картичката с формата стилов*/
-  #main-card{
-    border: 1px solid black;
+
+/*първата секция картичката с формата стилов*/
+#main-card{
     border-radius: 25px;
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
-  
-
+    padding: 15px;
 }    
 
 #myCard > .myForm > .section-card-btn{
-    border:2px solid black;
     display: flex;
     justify-content: center;
-    gap:1em;
-    
+    gap:1em;    
 }
 
-/*край*/
+/*край не секцията с кратичката където има и полета върте сее */
 
 
 /*мой си стил за бутоните accept и прочие*/
-#myBtn{
-    background-color: #87ffa1;
+#myBtnGreen{
+    /*background-color: #87ffa1;*/
+    background-color: #cfedd8;
+    padding : 10px 35px;
+}
+#myBtnBlue{
+    background-color: #d9e8fb;
+    color:black;
+    padding: 10px 35px;
+}
+#myBtnBlue:hover{
+    background-color: #a3c7f6;
+    border: white;
 }
 
 /*край на стиловте на мойте бутони*/
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
 
+    .footer-right {
+        margin-top: 10px;
+    }
+}
+/*тестове*/
+
+@media(min-width:1400px)
+{
+    /*карти от втората секция*/
+    .card-container{
+        gap:50px;
+    }
+    .cards
+    {
+        width: 260px;
+        height: 240px;
+        padding: 50px;
+    }
+
+    .circle {
+        width: 60px;
+        height: 60px;
+        background-color: white;
+        border-radius: 50%;
+    }
+    /*край*/
+   
+    /*промяна на първата секция*/
+    .section-first>.rounded{
+        --s: 700px !important;  
+        height: 360px;
+    }
+    #main-card{
+        width: 29rem !important;
+    }
+    
+    #myCard{
+        margin-top: 2em;
+        width: 100%;
+    }
+    .section-fourth{
+        width: 75% !important;
+        align-items: center;
+    }
+    
+    /*край с промените на първата ми секция*/
+    /*третата секция*/
+    .section-third{
+        padding:0;
+    }
+    .section-third > .row{
+        overflow: hidden;
+        background: #D9E8FB;
+        border-radius: 15px;       
+    }
+    /*край*/
+
+      /*стиловете за навбарчето*/
+    #navbarNav{
+        margin-right: 3em;
+    }
+    #navbarLogoBtn{
+        margin-left: 3em;
+    }
+    /*край*/
+   
+}
+
+@media(max-width:750px)
+{
+    .card-container {        
+        justify-content: center;
+    }
+   
+    .section-third{
+        flex-direction: column;
+        /* justify-content: center !important; */
+        /* margin-left: auto;
+        margin-right: auto; */
+    }
+    .section-third > .row{
+       width: 100% !important;
+       margin-bottom: 1em;
+    }
+
+  
+   
+}
+@media(max-width:1050px)
+{
+    .section-fourth{
+        flex-wrap: wrap;
+        
+    }
+    .section-fourth> .row{
+
+        margin-bottom: 1em;
+        gap: 1em !important;
+    }
+    
+}
+
+
+/*край на тестовете*/
